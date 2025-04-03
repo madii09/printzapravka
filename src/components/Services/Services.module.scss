@@ -1,0 +1,88 @@
+@import "../../styles/variables";
+
+.services {
+  margin: 4rem 0;
+
+  h2 {
+    font-size: 3rem;
+    margin: 0;
+  }
+
+  p {
+    font-size: 1.125rem;
+    margin-top: 0;
+  }
+
+  .servicesContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .serviceCard {
+      display: flex;
+      width: calc(100% / 2 - .5rem);
+      margin: .5rem 0;
+      padding: 1rem;
+
+      border-radius: 2rem;
+      background-color: #F8F8F8;
+
+
+      .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        width: 50%;
+
+        padding: .5rem;
+
+        p {
+          font-weight: 500;
+          color: $text-primary-light;
+          margin: 0;
+        }
+
+        span {
+          display: block;
+          font-size: 15px;
+          line-height: 25px;
+        }
+      }
+
+      .image {
+        display: flex;
+        justify-content: flex-end;
+        width: 50%;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 992px) {
+  .services {
+    .servicesContainer {
+      .serviceCard {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .services {
+    .servicesContainer {
+      .serviceCard {
+          display: flex;
+          flex-direction: column;
+
+        .content, .image {
+          width: 100%;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}

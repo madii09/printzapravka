@@ -1,0 +1,136 @@
+@import '../../styles/variables';
+@import '../../styles/global';
+
+.header {
+  padding: .5rem 0;
+  background-image: url(../../assets/background-square.png);
+
+  background-position: 75.7% 0;
+  background-repeat: repeat-y;
+  background-size: 27% auto;
+  border-radius: 0 0 6.25rem 6.25rem;
+  overflow: hidden;
+
+  .nav {
+    display: flex;
+    justify-content: space-between;
+
+    img {
+      width: 11rem;
+    }
+
+    .call {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      width: 3.75rem;
+      height: 3.75rem;
+      border-radius: 50%;
+      border: 1px solid darken($white, 75%);
+      transition: transform .2s ease-in-out;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+
+      .callContent {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 2.8rem;
+        height: 2.8rem;
+        background: #fff;
+        border-radius: 50%;
+        transition: background-color .2s ease-in-out;
+
+        &:hover {
+          background-color: $green-hover;
+        }
+      }
+    }
+  }
+
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1.5rem 0 8rem 0;
+
+    .right {
+      width: 45%;
+
+      h1 {
+        font-size: 3rem;
+        font-weight: 400;
+        text-transform: capitalize;
+        line-height: 2em;
+        color: $text-primary-dark;
+      }
+
+      p {
+        font-size: 20px;
+        font-weight: 200;
+        color: $text-secondary-dark;
+      }
+
+      ul {
+        display: flex;
+        list-style: none;
+        gap: 1rem;
+
+        padding: 0;
+
+        li {
+          display: flex;
+          align-items: center;
+
+          span {
+            margin-left: 1.25rem;
+          }
+        }
+      }
+
+      .rightButton {
+        margin-top: 3rem;
+      }
+    }
+
+    .left {
+      position: relative;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 55%;
+      margin-top: 2.5rem;
+
+      img {
+        position: relative;
+        z-index: 1;
+      }
+
+      img.backgroundColor {
+        position: absolute;
+        top: -5rem;
+        left: 0;
+        z-index: 0;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 992px) {
+  .header {
+    .content {
+      flex-direction: column;
+
+      .right,
+      .left {
+        width: 100%;
+      }
+    }
+  }
+}

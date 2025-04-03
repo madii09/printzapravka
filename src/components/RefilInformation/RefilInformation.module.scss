@@ -1,0 +1,179 @@
+@import "../../styles/variables";
+
+.refilInformationContainer {
+  border-radius: 0 0 6.25rem 6.25rem;
+}
+
+.refilInformation {
+  position: relative;
+
+  display: flex;
+  padding: 9rem 0;
+  background-image: url(../../assets/background-square.png);
+
+  background-position: 75.7% 0;
+  background-repeat: repeat-y;
+  background-size: 27% auto;
+
+  .left {
+    position: sticky;
+    top: 0;
+
+    width: 35%;
+    align-self: flex-start;
+
+    p {
+      color: darken($text-secondary-light, 25%);
+      font-size: 17px;
+      font-weight: 300;
+      line-height: 1.6em;
+    }
+
+    h2 {
+      font-size: 60px;
+      font-weight: 500;
+      text-transform: capitalize;
+      color: #F9F9F9;
+    }
+
+    .cartridgeRefill {
+      .content {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+
+        .descriptions {
+          width: 70%;
+
+          h2 {
+            margin-top: 0;
+            margin-bottom: .5rem;
+            font-size: 22px;
+            font-weight: 600;
+            text-transform: capitalize;
+            line-height: 1.6em;
+            color: $white;
+          }
+
+          p {
+            margin-top: 0;
+            margin-bottom: .25rem;
+            font-size: 17px;
+            font-weight: 300;
+            text-transform: none;
+            color: darken($text-secondary-light, 25%);
+          }
+        }
+
+      }
+
+      hr {
+        margin: 2rem 0;
+        border-color: darken($text-secondary-light, 25%);
+        border-bottom: none;
+      }
+
+      .btn {
+        width: 10rem;
+      }
+    }
+  }
+
+  .right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 65%;
+
+    .serviceType {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      margin: 4rem 0;
+
+      background-image: radial-gradient(at center center, #DB777721 0%, #F2295B00 70%);
+
+      img {
+        width: 34rem;
+        transition: transform .3s ease-in-out;
+
+        &:hover {
+          transform: scale(0.9);
+        }
+      }
+
+      .content {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+
+        p {
+          margin: 1.5rem 0 .75rem 0;
+          font-size: 19px;
+          font-weight: 500;
+          color: $white;
+        }
+
+        span {
+          display: block;
+          margin-bottom: 1.25rem;
+
+          font-size: 19px;
+          font-weight: 300;
+          line-height: 1.9em;
+          text-align: center;
+          color: $text-secondary-light;
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 992px) {
+  .refilInformation {
+    flex-direction: column;
+
+    .left, .right {
+      width: 100%;
+    }
+
+    .left {
+      position: relative;
+    }
+
+    .right {
+      flex-wrap: wrap;
+      flex-direction: row;
+
+
+      .serviceType {
+        align-items: flex-start;
+        height: 350px;
+        margin: 2rem 0;
+        width: calc(100% / 3);
+
+        img {
+          width: 10rem;
+        }
+
+        .content {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .refilInformation {
+    .right {
+      .serviceType {
+        width: calc(100% / 2);
+      }
+    }
+  }
+}
