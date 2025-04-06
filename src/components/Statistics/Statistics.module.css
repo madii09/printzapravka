@@ -1,0 +1,46 @@
+.statistics {
+  margin: 4rem 0;
+}
+.statistics ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.statistics ul li {
+  display: flex;
+  align-items: center;
+}
+.statistics ul li .bigDot {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+}
+.statistics ul li .bigDot.red {
+  background-color: #F15C45;
+}
+.statistics ul li .bigDot.brown {
+  background-color: #F1C48D;
+}
+.statistics ul li .bigDot.green {
+  background-color: #BFDB77;
+}
+.statistics ul li p {
+  margin: 0 1rem 0 0.5rem;
+  font-size: 18px;
+  font-weight: 600;
+}
+.statistics ul li span {
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .statistics ul {
+    align-items: center;
+    flex-direction: column;
+  }
+  .statistics ul li {
+    margin: 1rem 0;
+  }
+}/*# sourceMappingURL=Statistics.module.css.map */

@@ -1,0 +1,140 @@
+.refilInformationContainer {
+  border-radius: 0 0 6.25rem 6.25rem;
+}
+
+.refilInformation {
+  position: relative;
+  display: flex;
+  padding: 9rem 0;
+  background-image: url(../../assets/background-square.png);
+  background-position: 75.7% 0;
+  background-repeat: repeat-y;
+  background-size: 27% auto;
+}
+.refilInformation .left {
+  position: sticky;
+  top: 0;
+  width: 35%;
+  align-self: flex-start;
+}
+.refilInformation .left p {
+  color: #969696;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 1.6em;
+}
+.refilInformation .left h2 {
+  font-size: 60px;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: #F9F9F9;
+}
+.refilInformation .left .cartridgeRefill .content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.refilInformation .left .cartridgeRefill .content .descriptions {
+  width: 70%;
+}
+.refilInformation .left .cartridgeRefill .content .descriptions h2 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 22px;
+  font-weight: 600;
+  text-transform: capitalize;
+  line-height: 1.6em;
+  color: #ffffff;
+}
+.refilInformation .left .cartridgeRefill .content .descriptions p {
+  margin-top: 0;
+  margin-bottom: 0.25rem;
+  font-size: 17px;
+  font-weight: 300;
+  text-transform: none;
+  color: #969696;
+}
+.refilInformation .left .cartridgeRefill hr {
+  margin: 2rem 0;
+  border-color: #969696;
+  border-bottom: none;
+}
+.refilInformation .left .cartridgeRefill .btn {
+  width: 10rem;
+}
+.refilInformation .right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 65%;
+}
+.refilInformation .right .serviceType {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin: 4rem 0;
+  background-image: radial-gradient(at center center, rgba(219, 119, 119, 0.1294117647) 0%, rgba(242, 41, 91, 0) 70%);
+}
+.refilInformation .right .serviceType img {
+  width: 34rem;
+  transition: transform 0.3s ease-in-out;
+}
+.refilInformation .right .serviceType img:hover {
+  transform: scale(0.9);
+}
+.refilInformation .right .serviceType .content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.refilInformation .right .serviceType .content p {
+  margin: 1.5rem 0 0.75rem 0;
+  font-size: 19px;
+  font-weight: 500;
+  color: #ffffff;
+}
+.refilInformation .right .serviceType .content span {
+  display: block;
+  margin-bottom: 1.25rem;
+  font-size: 19px;
+  font-weight: 300;
+  line-height: 1.9em;
+  text-align: center;
+  color: #D6D6D6;
+}
+
+@media (max-width: 992px) {
+  .refilInformation {
+    flex-direction: column;
+  }
+  .refilInformation .left, .refilInformation .right {
+    width: 100%;
+  }
+  .refilInformation .left {
+    position: relative;
+  }
+  .refilInformation .right {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .refilInformation .right .serviceType {
+    align-items: flex-start;
+    height: 350px;
+    margin: 2rem 0;
+    width: 33.3333333333%;
+  }
+  .refilInformation .right .serviceType img {
+    width: 10rem;
+  }
+  .refilInformation .right .serviceType .content {
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .refilInformation .right .serviceType {
+    width: 50%;
+  }
+}/*# sourceMappingURL=RefilInformation.module.css.map */

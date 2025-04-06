@@ -1,0 +1,114 @@
+.bgLight {
+  background-color: #ffffff;
+  border-radius: 0 0 6.25rem 6.25rem;
+}
+
+.advantages {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 6rem 0;
+}
+.advantages p {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.9em;
+  color: #5a5a8c;
+}
+.advantages p span {
+  color: #f15C45;
+}
+.advantages h2 {
+  color: #1E1E2F;
+  font-size: 3rem;
+  text-align: center;
+}
+.advantages h2 span {
+  color: #f15C45;
+}
+.advantages .content {
+  display: flex;
+}
+.advantages .content .part1 {
+  width: 25%;
+}
+.advantages .content .part2 {
+  position: relative;
+  justify-items: center;
+  width: 50%;
+  overflow: hidden;
+}
+.advantages .content .part2 img {
+  position: relative;
+  display: block;
+  justify-items: center;
+  z-index: 1;
+  transition: transform 0.3s ease-in-out;
+}
+.advantages .content .part2 img:hover {
+  transform: scale(1.05);
+}
+.advantages .content .part2 img.bgSquareImg {
+  position: absolute;
+  top: 0;
+  left: 10%;
+  display: block;
+  width: 80%;
+  z-index: 0;
+}
+.advantages .content .part2 p {
+  margin-top: 6rem;
+  text-align: center;
+  color: #8a8a8a;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.9em;
+}
+.advantages .content .part3 {
+  justify-items: flex-end;
+  width: 25%;
+}
+.advantages .content .item {
+  width: 14rem;
+  margin-bottom: 2rem;
+  transition: transform 0.3s ease-in-out;
+}
+.advantages .content .item p {
+  margin: 20px 0 14px 0;
+  text-align: left;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.2em;
+  color: #1E1E2F;
+}
+.advantages .content .item span {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.9em;
+  color: #707070;
+}
+.advantages .content .item:hover {
+  transform: translateY(-0.75rem);
+}
+
+@media (max-width: 992px) {
+  .advantages .content {
+    flex-direction: column;
+  }
+  .advantages .content .part1,
+  .advantages .content .part2,
+  .advantages .content .part3 {
+    width: 100%;
+    justify-items: flex-start;
+  }
+  .advantages .content .part1,
+  .advantages .content .part3 {
+    display: flex;
+    justify-content: center;
+  }
+  .advantages .content .part2 p {
+    width: 100%;
+  }
+}/*# sourceMappingURL=Advantages.module.css.map */

@@ -1,0 +1,63 @@
+.services {
+  margin: 4rem 0;
+}
+.services h2 {
+  font-size: 3rem;
+  margin: 0;
+}
+.services p {
+  font-size: 1.125rem;
+  margin-top: 0;
+}
+.services .servicesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.services .servicesContainer .serviceCard {
+  display: flex;
+  width: calc(50% - 0.5rem);
+  margin: 0.5rem 0;
+  padding: 1rem;
+  border-radius: 2rem;
+  background-color: #F8F8F8;
+}
+.services .servicesContainer .serviceCard .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+  padding: 0.5rem;
+}
+.services .servicesContainer .serviceCard .content p {
+  font-weight: 500;
+  color: #1E1E2F;
+  margin: 0;
+}
+.services .servicesContainer .serviceCard .content span {
+  display: block;
+  font-size: 15px;
+  line-height: 25px;
+}
+.services .servicesContainer .serviceCard .image {
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+}
+
+@media (max-width: 992px) {
+  .services .servicesContainer .serviceCard {
+    width: 100%;
+  }
+}
+@media (max-width: 576px) {
+  .services .servicesContainer .serviceCard {
+    display: flex;
+    flex-direction: column;
+  }
+  .services .servicesContainer .serviceCard .content, .services .servicesContainer .serviceCard .image {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+}/*# sourceMappingURL=Services.module.css.map */

@@ -1,0 +1,65 @@
+.footer {
+  padding: 8rem 0;
+}
+.footer > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.footer .left {
+  width: 50%;
+}
+.footer .left a img {
+  width: 18rem;
+}
+.footer .left p {
+  text-align: left;
+  color: #999999;
+}
+.footer .left a.link {
+  font-weight: 250;
+  text-decoration: none;
+  color: #f15C45;
+}
+.footer .right {
+  width: 50%;
+}
+.footer .right ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.footer .right ul li p {
+  cursor: pointer;
+  color: #D5D5D5;
+  text-align: left;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: none;
+  line-height: 1.9em;
+  transition: color 0.2s ease-in-out;
+}
+.footer .right ul li p:hover {
+  color: #f15C45;
+}
+.footer p.ft {
+  flex-grow: 1;
+  text-align: center;
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.6em;
+  margin-top: 3rem;
+}
+.footer p.ft span {
+  color: #f15C45;
+}
+
+@media (max-width: 992px) {
+  .footer > div {
+    flex-direction: column;
+  }
+  .footer > div .left, .footer > div .right {
+    width: 100%;
+  }
+}/*# sourceMappingURL=Footer.module.css.map */

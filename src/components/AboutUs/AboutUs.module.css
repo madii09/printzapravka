@@ -1,0 +1,57 @@
+.aboutUs {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem 0;
+  border-radius: 0 0 6.25rem 6.25rem;
+  background-image: url(../../assets/background-square.png);
+  background-position: 0 440px;
+  background-repeat: repeat-x;
+  background-size: 25% auto;
+}
+.aboutUs h2 {
+  text-align: center;
+  font-size: 5.25rem;
+  font-weight: 500;
+  margin: 0.5rem 0 1rem;
+}
+.aboutUs p {
+  max-width: 30rem;
+  margin: 2rem auto;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 300;
+  text-transform: none;
+  line-height: 1.9em;
+  color: #8a8a8a;
+}
+.aboutUs .cards {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 6rem;
+}
+.aboutUs .cards .card {
+  width: 50%;
+  padding: 1.2rem;
+  background-color: #353b44;
+  border-radius: 2rem;
+}
+.aboutUs .cards .card p {
+  margin: 0;
+  text-align: left;
+  font-size: 20px;
+  font-weight: 500;
+  color: rgba(250, 250, 250, 0.5607843137);
+}
+.aboutUs .cards .card span {
+  color: rgba(220, 220, 220, 0.5607843137);
+  line-height: 2rem;
+}
+
+@media (max-width: 992px) {
+  .aboutUs .cards {
+    flex-direction: column;
+  }
+  .aboutUs .cards .card {
+    width: 100%;
+  }
+}/*# sourceMappingURL=AboutUs.module.css.map */
