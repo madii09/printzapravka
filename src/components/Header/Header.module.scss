@@ -1,5 +1,6 @@
 @import '../../styles/variables';
 @import '../../styles/global';
+//nav right left p h1
 
 .header {
 	max-width: 100%;
@@ -63,16 +64,21 @@
 			width: 45%;
 
 			h1 {
-				font-size: 3rem;
-				font-weight: 400;
+				box-decoration-break: clone;
+				display: inline;
+				font-family: 'Jost', sans-serif;
+				font-size: 48px;
+				font-weight: 500;
 				text-transform: capitalize;
-				line-height: 2em;
+				line-height: 1em;
 				color: $text-primary-dark;
+				text-align: left;
 			}
 
 			p {
 				font-size: 20px;
 				font-weight: 200;
+				text-align: left;
 				color: $text-secondary-dark;
 			}
 
@@ -108,8 +114,11 @@
 			margin-top: 2.5rem;
 
 			img {
-				position: relative;
+				display: inline-block;
+				vertical-align: middle;
 				z-index: 1;
+				max-width: 100%;
+				height: auto;
 			}
 
 			img.backgroundColor {
@@ -179,7 +188,7 @@
 		.content {
 			.nav {
 				flex-direction: column;
-				align-items: center;
+				// align-items: center;
 				width: 100%;
 			}
 			.right {

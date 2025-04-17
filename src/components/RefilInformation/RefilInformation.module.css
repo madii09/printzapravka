@@ -27,7 +27,7 @@
   font-size: 60px;
   font-weight: 500;
   text-transform: capitalize;
-  color: #F9F9F9;
+  color: #f9f9f9;
 }
 .refilInformation .left .cartridgeRefill .content {
   display: flex;
@@ -110,31 +110,75 @@
   .refilInformation {
     flex-direction: column;
   }
-  .refilInformation .left, .refilInformation .right {
+  .refilInformation .left,
+  .refilInformation .right {
     width: 100%;
-  }
-  .refilInformation .left {
     position: relative;
   }
   .refilInformation .right {
-    flex-wrap: wrap;
-    flex-direction: row;
-  }
-  .refilInformation .right .serviceType {
-    align-items: flex-start;
-    height: 350px;
-    margin: 2rem 0;
-    width: 33.3333333333%;
+    align-items: center;
   }
   .refilInformation .right .serviceType img {
-    width: 10rem;
-  }
-  .refilInformation .right .serviceType .content {
-    text-align: center;
+    width: 90%;
   }
 }
 @media (max-width: 768px) {
+  .refilInformation {
+    padding: 5rem 1rem;
+  }
+  .refilInformation .left h2 {
+    font-size: 2rem;
+  }
+  .refilInformation .left p {
+    font-size: 16px;
+  }
+  .refilInformation .left .cartridgeRefill .content {
+    flex-direction: column;
+  }
+  .refilInformation .left .cartridgeRefill .content .descriptions {
+    width: 100%;
+  }
+  .refilInformation .left .cartridgeRefill .content .descriptions h2 {
+    font-size: 18px;
+  }
+  .refilInformation .left .cartridgeRefill .content .descriptions p {
+    font-size: 15px;
+  }
+  .refilInformation .left .cartridgeRefill .btn {
+    width: 100%;
+  }
   .refilInformation .right .serviceType {
-    width: 50%;
+    margin: 2rem 0;
+  }
+  .refilInformation .right .serviceType img {
+    width: 100%;
+  }
+  .refilInformation .right .serviceType .content p,
+  .refilInformation .right .serviceType .content span {
+    font-size: 16px;
+    text-align: center;
+  }
+}
+@media (max-width: 576px) {
+  .refilInformation {
+    padding: 4rem 1rem;
+  }
+  .refilInformation .left h2 {
+    font-size: 1.75rem;
+  }
+  .refilInformation .right .serviceType img {
+    width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  .refilInformation {
+    padding: 3rem 1rem;
+  }
+  .refilInformation .left h2 {
+    font-size: 1.5rem;
+  }
+  .refilInformation .right .serviceType .content p,
+  .refilInformation .right .serviceType .content span {
+    font-size: 14px;
   }
 }/*# sourceMappingURL=RefilInformation.module.css.map */

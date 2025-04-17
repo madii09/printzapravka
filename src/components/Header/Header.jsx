@@ -1,17 +1,17 @@
-import { Button } from '../Button/Button';
-import { classNames } from '../../utils/classNames';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { classNames } from '../../utils/classNames';
+import { Button } from '../Button/Button';
+import { Modal } from '../Modal/Modal.jsx';
 import { GuaranteeSvg } from '../SVGIcons/GuaranteeSVG.jsx';
 import { QualityCheckSvg } from '../SVGIcons/QualityCheckSVG.jsx';
-import { Modal } from '../Modal/Modal.jsx';
 
-import styles from './Header.module.scss';
 import { faLongArrowAltRight, faPhoneAlt } from '@fortawesome/free-solid-svg-icons';
+import styles from './Header.module.scss';
 
-import LogoImg from '../../assets/logo.png';
-import BannerImg from '../../assets/banner-bg-img.png';
-import BannerColorImg from '../../assets/banner-bg-color.png';
 import { useState } from 'react';
+import BannerColorImg from '../../assets/banner-bg-color.png';
+import BannerImg from '../../assets/banner-bg-img.png';
+import LogoImg from '../../assets/logo.png';
 
 export const Header = () => {
 	const [isModalOpen, setIsModalOpen] = useState(false);
@@ -34,12 +34,12 @@ export const Header = () => {
 	return (
 		<header className={classNames('bg-dark', styles.header)}>
 			<div className='container'>
-				<nav className={styles.nav}>
+				<nav id='nav-call' className={styles.nav}>
 					<a href='#'>
 						<img src={LogoImg} alt='logo' />
 					</a>
 
-					<div className={styles.call}>
+					<div id='call-nm' className={styles.call}>
 						<a href='tel:+998940511494' className={styles.callContent} onClick={handlePhoneClick}>
 							<FontAwesomeIcon icon={faPhoneAlt} rotation={90} color={'black'} />
 						</a>

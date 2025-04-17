@@ -26,7 +26,7 @@ export const RefilInformation = () => {
 
 						<hr />
 
-						<Button size={'lg'} className={styles.btn}>
+						<Button size={'lg'} className={styles.btn} id='btn'>
 							Узнать цену
 						</Button>
 					</div>

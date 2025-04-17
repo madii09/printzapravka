@@ -46,7 +46,7 @@ export const Advantages = () => {
 							<p>Качество, скорость и выгодные цены – работаем для вас!</p>
 						</div>
 
-						<div className={styles.part3}>
+						<div id='gurantee-card' className={styles.part3}>
 							<div className={styles.item}>
 								<GuaranteeSecondarySvg />
 								<p>Гарантия на товар</p>

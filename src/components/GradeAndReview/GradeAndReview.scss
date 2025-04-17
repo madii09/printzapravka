@@ -1,0 +1,76 @@
+@import '../../styles/variables';
+//here
+
+.grade-cards {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    border-radius: 0 0 6.25rem 6.25rem;
+
+    background-image: url(../../assets/background-square.png);
+    background-position: 0 440px;
+    background-repeat: repeat-x;
+    background-size: 25% auto;
+
+    h2 {
+        text-align: center;
+        font-size: 5.25rem;
+        font-weight: 500;
+        margin: 0.5rem 0 1rem;
+    }
+
+    p {
+        max-width: 30rem;
+        margin: 2rem auto;
+        text-align: center;
+
+        font-size: 18px;
+        font-weight: 300;
+        text-transform: none;
+        line-height: 1.9em;
+        color: darken($text-secondary-light, 30%);
+    }
+
+    .cards-review-and-grade {
+        display: flex;
+        gap: 1.5rem;
+        // overflow: hidden;
+
+
+        margin-bottom: 6rem;
+
+        .card-review {
+            width: 50%;
+            padding: 2rem;
+            background-color: #353b44;
+            border-radius: 2rem;
+
+            p {
+                margin: 0;
+
+                text-align: left;
+                font-size: 20px;
+                font-weight: 500;
+
+                color: #fafafa8f;
+            }
+
+            span {
+                color: #dcdcdc8f;
+                line-height: 2rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .aboutUs {
+        .cards {
+            flex-direction: column;
+
+            .card {
+                width: 100%;
+            }
+        }
+    }
+}

@@ -141,6 +141,37 @@
 					width: 100%;
 				}
 			}
+			.item {
+				width: 100%;
+				text-align: center;
+
+				p {
+					text-align: center;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 576px) {
+	.advantages {
+		.content {
+			.item {
+				width: 100%;
+				text-align: center;
+
+				p {
+					text-align: center;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 382px) {
+	.advantages {
+		h2 {
+			font-size: 2rem;
 		}
 	}
 }

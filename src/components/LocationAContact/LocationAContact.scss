@@ -1,0 +1,153 @@
+.contact-section {
+    padding: 4rem 2rem;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+
+    .contact-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: stretch;
+    }
+
+    .contact-info {
+        background-color: #f9f9f9;
+        padding: 4rem;
+        width: 600px;
+        height: 100%;
+        border-radius: 14px;
+        font-weight: 500;
+
+        .icon-circle {
+            background: #fdd9a0;
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            margin-bottom: 1rem;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+
+            .highlight {
+                color: #fa6843;
+            }
+        }
+
+        .subtext {
+            color: #a3a3a3;
+            font-size: 16px;
+            margin-bottom: 2rem;
+        }
+
+        .contact-list {
+            list-style: none;
+            padding: 0;
+
+            li {
+                margin-bottom: 1rem;
+                font-size: 1rem;
+                // display: flex;
+                align-items: center;
+                gap: 0.5rem;
+            }
+        }
+    }
+
+    .map-container {
+        background-color: #f9f9f9;
+        border-radius: 14px;
+        width: 600px;
+        height: auto;
+
+        .contact-map {
+            // height: 100%;
+            height: 460px;
+            padding: 3rem;
+            border-left: 2px dotted rgba(128, 128, 128, 0.469);
+
+            iframe {
+                width: 100%;
+                height: 100%;
+                border: none;
+                border-radius: 12px;
+            }
+
+            .map-location-button-wrapper {
+                position: absolute;
+                bottom: 12px;
+                right: 12px;
+                z-index: 2;
+
+                .geo-button {
+                    padding: 6px 12px;
+                    font-size: 14px;
+                    background-color: #ffffff;
+                    border: 1px solid #ccc;
+                    border-radius: 6px;
+                    color: #333;
+                    cursor: pointer;
+                    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                    transition: background-color 0.2s ease;
+
+                    &:hover {
+                        background-color: #f0f0f0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 📱 Адаптив для планшетов и телефонов
+@media (max-width: 1024px) {
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+
+        .contact-info,
+        .map-container {
+            width: 100%;
+            max-width: 550px;
+        }
+
+        .contact-map {
+            height: 300px;
+        }
+    }
+}
+@media (max-width: 576px) {
+    .contact-container {
+        .contact-info{
+            h2{
+                font-size: 2rem;
+            }
+        }
+    }
+}
+@media (max-width: 375px) {
+    .contact-container {
+        .contact-info {
+            h2 {
+                font-size: 1.2rem;
+            }
+            p{
+                font-size: 0.6rem;
+            }
+            ul{
+                li{
+                    font-size: 0.6rem;
+                }
+            }
+        }
+    }
+}

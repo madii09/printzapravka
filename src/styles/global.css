@@ -18,42 +18,136 @@ body {
   color: #F9F9F9;
 }
 
-/* Default container: full width with some padding */
 .container {
-  width: 100%;
+  max-width: 100%;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
 }
 
-/* Small screens (≥576px) */
+._right_1is5o_24 ul li:nth-child(2) p {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  -webkit-hyphens: auto;
+          hyphens: auto;
+}
+
+/* Container ширины */
 @media (min-width: 576px) {
   .container {
     max-width: 540px;
   }
 }
-/* Medium screens (≥768px) */
 @media (min-width: 768px) {
   .container {
     max-width: 720px;
   }
 }
-/* Large screens (≥992px) */
 @media (min-width: 992px) {
   .container {
     max-width: 960px;
   }
 }
-/* Extra large screens (≥1200px) */
 @media (min-width: 1200px) {
   .container {
     max-width: 1140px;
   }
 }
-/* Extra extra large screens (≥1400px) */
 @media (min-width: 1400px) {
   .container {
     max-width: 1320px;
+  }
+}
+@media (max-width: 576px) {
+  ._aboutUs_1r4he_1 .container h2 {
+    font-size: 2rem;
+  }
+}
+/* 💻 Планшетная адаптация */
+@media (max-width: 1024px) {
+  ._aboutUs_1r4he_1 .container h2 {
+    font-size: 4rem;
+  }
+  .servicesContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .serviceCard {
+    width: 100%;
+  }
+  .statistics {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    text-align: center;
+  }
+  .left,
+  .right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .services h2 {
+    font-size: 24px;
+  }
+  .services p,
+  .left p {
+    font-size: 16px;
+    text-align: center;
+  }
+}
+/* 📱 Мобильная адаптация */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+  h1,
+  h2 {
+    font-size: 22px;
+    text-align: center;
+  }
+  p {
+    font-size: 14px;
+    text-align: center;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  ._aboutUs_1r4he_1 .container h2 {
+    font-size: 3rem;
+  }
+  .footer {
+    padding: 20px 10px;
+    text-align: center;
+  }
+  .footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer .right {
+    margin-top: 20px;
+  }
+  .button {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .left a {
+    display: inline-block;
+    margin-top: 10px;
+  }
+  .servicesContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .serviceCard .content {
+    text-align: center;
+  }
+  .statistics {
+    text-align: center;
   }
 }/*# sourceMappingURL=global.css.map */

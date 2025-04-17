@@ -111,4 +111,25 @@
   .advantages .content .part2 p {
     width: 100%;
   }
+  .advantages .content .item {
+    width: 100%;
+    text-align: center;
+  }
+  .advantages .content .item p {
+    text-align: center;
+  }
+}
+@media (max-width: 576px) {
+  .advantages .content .item {
+    width: 100%;
+    text-align: center;
+  }
+  .advantages .content .item p {
+    text-align: center;
+  }
+}
+@media (max-width: 382px) {
+  .advantages h2 {
+    font-size: 2rem;
+  }
 }/*# sourceMappingURL=Advantages.module.css.map */

@@ -31,7 +31,7 @@
 }
 .footer .right ul li p {
   cursor: pointer;
-  color: #D5D5D5;
+  color: #d5d5d5;
   text-align: left;
   font-size: 18px;
   font-weight: 400;
@@ -59,7 +59,8 @@
   .footer > div {
     flex-direction: column;
   }
-  .footer > div .left, .footer > div .right {
+  .footer > div .left,
+  .footer > div .right {
     width: 100%;
   }
 }/*# sourceMappingURL=Footer.module.css.map */

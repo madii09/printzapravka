@@ -1,179 +1,251 @@
-@import "../../styles/variables";
+@import '../../styles/variables';
 
 .refilInformationContainer {
-  border-radius: 0 0 6.25rem 6.25rem;
+	border-radius: 0 0 6.25rem 6.25rem;
 }
 
 .refilInformation {
-  position: relative;
+	position: relative;
 
-  display: flex;
-  padding: 9rem 0;
-  background-image: url(../../assets/background-square.png);
+	display: flex;
+	padding: 9rem 0;
+	background-image: url(../../assets/background-square.png);
 
-  background-position: 75.7% 0;
-  background-repeat: repeat-y;
-  background-size: 27% auto;
+	background-position: 75.7% 0;
+	background-repeat: repeat-y;
+	background-size: 27% auto;
 
-  .left {
-    position: sticky;
-    top: 0;
+	.left {
+		position: sticky;
+		top: 0;
 
-    width: 35%;
-    align-self: flex-start;
+		width: 35%;
+		align-self: flex-start;
 
-    p {
-      color: darken($text-secondary-light, 25%);
-      font-size: 17px;
-      font-weight: 300;
-      line-height: 1.6em;
-    }
+		p {
+			color: darken($text-secondary-light, 25%);
+			font-size: 17px;
+			font-weight: 300;
+			line-height: 1.6em;
+		}
 
-    h2 {
-      font-size: 60px;
-      font-weight: 500;
-      text-transform: capitalize;
-      color: #F9F9F9;
-    }
+		h2 {
+			font-size: 60px;
+			font-weight: 500;
+			text-transform: capitalize;
+			color: #f9f9f9;
+		}
 
-    .cartridgeRefill {
-      .content {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-between;
+		.cartridgeRefill {
+			.content {
+				display: flex;
+				flex-wrap: wrap;
+				align-items: center;
+				justify-content: space-between;
 
-        .descriptions {
-          width: 70%;
+				.descriptions {
+					width: 70%;
 
-          h2 {
-            margin-top: 0;
-            margin-bottom: .5rem;
-            font-size: 22px;
-            font-weight: 600;
-            text-transform: capitalize;
-            line-height: 1.6em;
-            color: $white;
-          }
+					h2 {
+						margin-top: 0;
+						margin-bottom: 0.5rem;
+						font-size: 22px;
+						font-weight: 600;
+						text-transform: capitalize;
+						line-height: 1.6em;
+						color: $white;
+					}
 
-          p {
-            margin-top: 0;
-            margin-bottom: .25rem;
-            font-size: 17px;
-            font-weight: 300;
-            text-transform: none;
-            color: darken($text-secondary-light, 25%);
-          }
-        }
+					p {
+						margin-top: 0;
+						margin-bottom: 0.25rem;
+						font-size: 17px;
+						font-weight: 300;
+						text-transform: none;
+						color: darken($text-secondary-light, 25%);
+					}
+				}
+			}
 
-      }
+			hr {
+				margin: 2rem 0;
+				border-color: darken($text-secondary-light, 25%);
+				border-bottom: none;
+			}
 
-      hr {
-        margin: 2rem 0;
-        border-color: darken($text-secondary-light, 25%);
-        border-bottom: none;
-      }
+			.btn {
+				width: 10rem;
+			}
+		}
+	}
 
-      .btn {
-        width: 10rem;
-      }
-    }
-  }
+	.right {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		width: 65%;
 
-  .right {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    width: 65%;
+		.serviceType {
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+			justify-content: center;
+			margin: 4rem 0;
 
-    .serviceType {
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-      justify-content: center;
-      margin: 4rem 0;
+			background-image: radial-gradient(at center center, #db777721 0%, #f2295b00 70%);
 
-      background-image: radial-gradient(at center center, #DB777721 0%, #F2295B00 70%);
+			img {
+				width: 34rem;
+				transition: transform 0.3s ease-in-out;
 
-      img {
-        width: 34rem;
-        transition: transform .3s ease-in-out;
+				&:hover {
+					transform: scale(0.9);
+				}
+			}
 
-        &:hover {
-          transform: scale(0.9);
-        }
-      }
+			.content {
+				display: flex;
+				align-items: center;
+				flex-direction: column;
+				justify-content: center;
 
-      .content {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        justify-content: center;
+				p {
+					margin: 1.5rem 0 0.75rem 0;
+					font-size: 19px;
+					font-weight: 500;
+					color: $white;
+				}
 
-        p {
-          margin: 1.5rem 0 .75rem 0;
-          font-size: 19px;
-          font-weight: 500;
-          color: $white;
-        }
+				span {
+					display: block;
+					margin-bottom: 1.25rem;
 
-        span {
-          display: block;
-          margin-bottom: 1.25rem;
-
-          font-size: 19px;
-          font-weight: 300;
-          line-height: 1.9em;
-          text-align: center;
-          color: $text-secondary-light;
-        }
-      }
-    }
-  }
+					font-size: 19px;
+					font-weight: 300;
+					line-height: 1.9em;
+					text-align: center;
+					color: $text-secondary-light;
+				}
+			}
+		}
+	}
 }
 
-
 @media (max-width: 992px) {
-  .refilInformation {
-    flex-direction: column;
+	.refilInformation {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 
-    .left, .right {
-      width: 100%;
-    }
+		.cartridgeRefill {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			// .btn {
+			// 	width: 50%;
+			// }
+		}
 
-    .left {
-      position: relative;
-    }
+		.left,
+		.right {
+			width: 90%;
+			position: relative;
+		}
 
-    .right {
-      flex-wrap: wrap;
-      flex-direction: row;
+		.right {
+			align-items: center;
 
-
-      .serviceType {
-        align-items: flex-start;
-        height: 350px;
-        margin: 2rem 0;
-        width: calc(100% / 3);
-
-        img {
-          width: 10rem;
-        }
-
-        .content {
-          text-align: center;
-        }
-      }
-    }
-  }
+			.serviceType {
+				text-align: center;
+				img {
+					max-width: 70%;
+				}
+			}
+		}
+	}
 }
 
 @media (max-width: 768px) {
-  .refilInformation {
-    .right {
-      .serviceType {
-        width: calc(100% / 2);
-      }
-    }
-  }
+	.refilInformation {
+		padding: 5rem 1rem;
+
+		.left {
+			h2 {
+				font-size: 2rem;
+			}
+
+			p {
+				font-size: 16px;
+			}
+
+			.cartridgeRefill {
+				.content {
+					flex-direction: column;
+					gap: 35px;
+
+					.descriptions {
+						width: 100%;
+						h2 {
+							font-size: 18px;
+						}
+						p {
+							font-size: 15px;
+						}
+					}
+				}
+
+				.btn {
+					width: 50%;
+				}
+			}
+		}
+
+		.right {
+			.serviceType {
+				margin: 2rem 0;
+
+				img {
+					width: 50%;
+				}
+
+				.content {
+					p,
+					span {
+						font-size: 16px;
+						text-align: center;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 576px) {
+	.refilInformation {
+		align-items: center;
+		padding: 4rem 1rem;
+
+		.left h2 {
+			font-size: 1.75rem;
+		}
+
+		.right .serviceType img {
+			width: 50%;
+		}
+	}
+}
+
+@media (max-width: 400px) {
+	.refilInformation {
+		padding: 3rem 1rem;
+
+		.left h2 {
+			font-size: 1.5rem;
+		}
+
+		.right .serviceType .content p,
+		.right .serviceType .content span {
+			font-size: 14px;
+		}
+	}
 }

@@ -1,8 +1,8 @@
 export const CartridgeViewSvg = () => {
 	return (
 		<svg
-			width='104'
-			height='130'
+			width='85'
+			height='110'
 			viewBox='0 0 104 130'
 			fill='none'
 			xmlns='http://www.w3.org/2000/svg'

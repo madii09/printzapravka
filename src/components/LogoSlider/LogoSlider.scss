@@ -1,0 +1,51 @@
+.logo-slider-container {
+	padding: 3rem 2rem;
+	background-color: #f9f9f9;
+	border-radius: 20px;
+	max-width: 1200px;
+	margin: 0 auto;
+
+	.swiper-slide {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		img {
+			max-height: 160px;
+			max-width: 200px;
+			object-fit: contain;
+			filter: grayscale(0%);
+			transition: filter 0.3s ease;
+
+			&:hover {
+				filter: grayscale(0%);
+			}
+		}
+	}
+
+	.swiper-pagination-bullet-active {
+		background-color: black;
+	}
+}
+
+@media (max-width: 768px) {
+	.logo-slider-container {
+		.swiper-slide {
+			img {
+				max-width: 64px;
+				min-height: 64px;
+			}
+		}
+	}
+}
+
+@media (max-width: 400px) {
+	.logo-slider-container {
+		.swiper-slide {
+			img {
+				max-width: 32px;
+				min-height: 32px;
+			}
+		}
+	}
+}
