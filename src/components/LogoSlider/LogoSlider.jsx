@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import './logoslider.scss';
+import './LogoSlider.scss';
 
 import canon from '../../assets/canon.png';
 import pantum from '../../assets/pantum.png';
